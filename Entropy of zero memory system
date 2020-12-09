@@ -1,0 +1,13 @@
+n=input('Enter the number of source alphabets')
+P=[0 0 0];
+y=0;
+fori=1:n
+    x=input('Enter the corresponding probablities of the source alphabets (less than one)');
+    P(i)=x;
+end
+for j=1:n
+          y=y+(P(j)*log2(1/P(j)));
+end
+
+Hs=y
+Hs2=2*Hs
